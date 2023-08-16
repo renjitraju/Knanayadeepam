@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Knanaya Deepam - Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+
+        <!--Top Panel-->
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Knanaya Deepam</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4 ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Top Panel-->
+
+        <div id="layoutSidenav">
+
+
+          <!--Left Panel-->          
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Main</div>
+                            <a class="nav-link" href="Dashboard.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <hr>
+                            <a class="nav-link" href="knanayadeepam.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                All News
+                            </a>
+                            
+                            <!--
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                1st Lv'l Latest News
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Ani. Latest News</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Ani. Banner</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Main News</a>
+                                </nav>
+                            </div>
+                           
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                All Latest Articles
+                                
+                            </a> -->
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        2nd Level News
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                </nav>
+                            </div>
+                            <hr>
+                            <a class="nav-link" href="knanayadeepam.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Deepam Magazine
+                            </a>
+                            <hr>
+                            <a class="nav-link" href="categories.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Categories
+                            </a>
+                            <hr>
+                            <a class="nav-link" href="methranmessage.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Methran Message
+                            </a>
+                            <a class="nav-link" href="editorialmessage.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Editorial Message
+                            </a>
+                            <a class="nav-link" href="weddings.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Weddings
+                            </a>
+                            <a class="nav-link" href="obituary.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Obituary 
+                            </a>
+                            <a class="nav-link" href="achievement.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Acheivements 
+                            </a>
+
+                            <hr>
+                            <!--
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Entertainments
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Kids Corner
+                            </a>
+                            -->
+                            <a class="nav-link" href="spiritualmessage.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Spiritual Message
+                            </a>
+                            <hr>
+                            <a class="nav-link" href="users.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Users
+                            </a>
+
+                            <hr>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Advertisements
+                            </a>
+                            <a class="nav-link" href="subscriptions.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Subscription
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Admin
+                    </div>
+                </nav>
+            </div>
+          <!--Left Panel--> 
+          <!--Content Panel--> 
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Knanaya Deepam</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body">Go to Latest News</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">Go Article Page</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body">Go Matrimonials</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Go to Wedding Page</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Latest Entries
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Post by</th>
+                                            <th>Position</th>
+                                            <th>Category</th>
+                                            <th>Heading</th>
+                                            <th>Picture</th>
+                                            <th>Message</th>
+                                            <th>Status</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>Admin</td>
+                                            <td>Latest - 1</td>
+                                            <td>World News</td>
+                                            <td>Make Poetry, Not War! </td>
+                                            <td><img src="../assets/img/latest/5.png" width="60px"></td>
+                                            <td>The social-media ...</td>
+                                            <td><a href="#" class="text-danger" title="Click to Approve" data-bs-toggle="modal" data-bs-target="#articleapproveModal"><i class="fa-solid fa-x text-danger" ></a></td>
+                                            <td><a href="#" class="text-danger" title="View Article" data-bs-toggle="modal" data-bs-target="#viewUserModel"><i class="fa fa-eye p-1 bg-info text-white" aria-hidden="true"></i></a> <a href="#" class=" bg-primary text-white" title="Edit the Post" data-bs-toggle="modal" data-bs-target="#editModel"><i class="fa-solid fa-pen-to-square p-1 bg-success text-white"></i></a> <a href="#" class="text-danger" title="Delete user" data-bs-toggle="modal" data-bs-target="#subscriptiondeleteModal"><i class="fa-solid fa-trash p-1 bg-danger text-white" ></i></a></td>
+
+                                        </tr>
+               
+                                        <tr>
+                                            <td>Admin</td>
+                                            <td>Ani. Banner</td>
+                                            <td>Kerala News</td>
+                                            <td>63</td>
+                                            <td>2011/07/25</td>
+                                            <td>2011/07/25</td>
+                                            <td><i class="fa-solid fa-check text-primary "></i></td>
+                                            <td><a href="#" class="text-danger" title="View user media" data-bs-toggle="modal" data-bs-target="#playusermediaModal"><i class="fa fa-eye p-1 bg-info text-white" aria-hidden="true"></i></a> <a href="#" class=" bg-primary text-white" title="Edit the Post" data-bs-toggle="modal" data-bs-target="#editModel"><i class="fa-solid fa-pen-to-square p-1 bg-success text-white"></i></a> <a href="#" class="text-danger" title="Delete user" data-bs-toggle="modal" data-bs-target="#subscriptiondeleteModal"><i class="fa-solid fa-trash p-1 bg-danger text-white" ></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2012/03/29</td>
+                                            <td>2012/03/29</td>
+                                            <td>2012/03/29</td>
+                                            <td>$433,060</td>
+                                        </tr>
+                                       
+                                
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!--footer-->
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Admin panel created by Renjit Raju</div>
+                           
+                        </div>
+                    </div>
+                </footer>
+                <!--footer-->
+            </div>
+            <!--Content Panel-->    
+        </div>
+
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
+
+
+ <!-- edit Modal -->
+ <div class="modal fade" id="editModel" tabindex="-1040" aria-labelledby="editModelLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editModelLabel">Edit post?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-3">
+                            <label for="message-text" class="col-form-label fw-bold">Post by</label>
+                             <br>Renjit Raju   
+                        </div>
+                        <div class="col-md-3">
+                            <label for="message-text" class="col-form-label fw-bold">Select Position</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Latest News
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Banner News
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Main News
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Latest Articles
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Latest Articles 1st
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Latest Articles Sub
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="message-text" class="col-form-label fw-bold">Select Category</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="" selected>Category</option>
+                                <option value="1">World News</option>
+                                <option value="2">Knanaya News</option>
+                                <option value="2">Article</option>
+                                <option value="2">Other News</option>
+                                <option value="2">Kids Corner</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="message-text" class="col-form-label fw-bold">Picture</label>
+                             <br><img src="../assets/img/latest/5.png" width="200px"> <br>
+                             <input class="form-control" type="file" id="formFileMultiple"> 
+                        </div>
+                        <hr class="d-none d-md-block my-2">
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="message-text" class="col-form-label fw-bold">Post Heading</label>
+                         <br> <input type="email" class="form-control" value="Make Poetry, Not War! "> 
+                    </div>
+                    <hr class="d-none d-md-block my-2">
+                </div>
+                <div class="row">
+                    
+                    <div class="col-md-12">
+                        <textarea class="form-control" rows="20">Browser default checkboxes and radios are replaced with the help of .form-check, a series of classes for both input types that improves the layout and behavior of their HTML elements, that provide greater customization and cross browser consistency. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</textarea>
+                    </div>
+
+
+                </div>
+            </div>        
+                    </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger">Submit</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- End of edit Modal -->
+                          <!-- Modal -->
+        <div class="modal fade" id="subscriptionStatusModal" tabindex="-1" aria-labelledby="subscriptionStatusModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="subscriptionStatusModalLabel">Subscription Status</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to change the subscription status?
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger">Unsubscribe</button>
+                <button type="button" class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal user media play -->
+
+        <div class="modal fade" id="subscriptiondeleteModal" tabindex="-1" aria-labelledby="subscriptiondeleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="subscriptiondeleteModalLabel">Spiritual Message Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete this user?
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal user media play -->
+        <div class="modal fade" id="viewUserModel" tabindex="-1" aria-labelledby="viewUserModelLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="viewUserModelLabel">View Article Details..</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <table class="table">
+                        
+                        <tbody>
+                          <tr>
+                            <th>Post by</th>
+                            <td>Renjit Raju</td>
+                          </tr>
+                          <tr>
+                            <th>Position</th>
+                            <td>Homepage - Latest News Animation</td>
+                          </tr>
+                          <tr>
+                            <th>Category</th>
+                            <td>World News</td>
+                          </tr>
+                          <tr>
+                            <th>Heading</th>
+                            <td>Make Poetry, Not War!</td>
+                          </tr>
+                          <tr>
+                            <th>Picture</th>
+                            <td><img src="../assets/img/latest/5.png"</td>
+                          </tr>
+                          <tr>
+                            <th>Message</th>
+                            <td>The Bank of England may have lifted interest rates by less than a lot of people had been expecting up until recently - up by a quarter percentage point rather than a half - but for those with mortgages, the most striking thing from the trove of analysis they've published today isn't about today but about tomorrow.
+                                <a
+  class="link"
+  data-mdb-toggle="collapse"
+  href="#collapseExample"
+
+  aria-expanded="false"
+  aria-controls="collapseExample"
+>
+  Link with href
+</a>
+                                
+
+                                
+
+                                
+<div class="collapse mt-3" id="collapseExample">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+    squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+    sapiente ea proident.
+                                        Because there are heavy hints dropped throughout the Bank's Monetary Policy Report that it expects borrowing costs to stay high for a lot longer than many had anticipated.
+
+                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                  
+                                Only a few months ago financial markets were betting that the Bank Rate - the official borrowing level set at Threadneedle Street - would be down to 4% by 2024 and 3.7% by 2025. Far higher than the post-financial crisis period but a fall all the same.
+                                
+                                Now, those same markets think rates will still be at 5.9% in 2024 and at 5% by 2025. And rather than challenging those assumptions, the Bank has come as close as possible to reinforcing them.
+                                
+                                This institution doesn't provide explicit guidance about where it's expecting interest rates to go; it prefers to drop hints. And the hint in the minutes alongside the decision today was about as heavy as you could get.
+                                
+                                "The [Monetary Policy Committee] would ensure that Bank Rate was sufficiently restrictive for sufficiently long to return inflation to the 2% target sustainably in the medium term, in line with its remit."
+                                
+                                Higher for longer, in other words.
+                                
+                                Why? Another clue is to be found elsewhere in the Bank's forecasts today. It's worth quoting at length: "Sharp increases in energy food and other import prices over the past two years have had second-round effects on domestic prices and wages.
+                                
+                                
+                                Advertisement
+                                "These second-round effects are likely to take longer to unwind than they did to emerge and the Monetary Policy Committee has placed weight in its recent forecasts on the risk that they might persist for longer.
+                                
+                                "The committee now judges that some of this risk may have begun to crystallise.</td>
+                                        
+                            
+                            </div>
+                        </div>  
+                            </tr>
+                          
+                          <tr>
+                            <th>Status</th>
+                            <td>Approved</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal user media play -->
+        <div class="modal fade" id="playusermediavideoModal" tabindex="-1" aria-labelledby="playusermediavideoModalLabel" aria-hidden="true">
+            <div class="modal-dialog role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="playusermediavideoModalLabel">Play user Media</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body id="yt-player"">
+                    <iframe width="100%" height="323" src="https://www.youtube.com/embed/Tln328Upic0" title="The Hunt For Veerappan | Official Teaser | Netflix India" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="subscriptiondeleteModal" tabindex="-1" aria-labelledby="subscriptiondeleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="subscriptiondeleteModalLabel">User Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete this user?
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="articleapproveModal" tabindex="-1" aria-labelledby="articleapproveModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="subscriptionStatusModalLabel">Article Approve</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to approve this?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Approve</button>
+                </div>
+              </div>
+            </div>
+          </div>
