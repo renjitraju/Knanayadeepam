@@ -5,5 +5,5 @@ git commit -m "my comments"
 git branch -M main
 git remote add origin https://github.com/renjitraju/knanayadeepam.git
 git push -u origin main 
-test
-jj
+git branch
+git checkout main
